@@ -24,7 +24,7 @@ be prompted to try again.
 
 # Useful Websites
 
-- [W3 Schools]([https://www.w3schools.com/cpp/default.asp])
+- [W3 Schools](https://www.w3schools.com/cpp/default.asp)
 - [Web Site Name](http://url.link.goes.here)
 
 # Future Work
