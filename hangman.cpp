@@ -125,6 +125,12 @@ void display()
     bool done = false;
     while (done != true)
     {
+        //for (int i = 0; i <= 100; ++i) {
+        //    // Clear the screen and move cursor to top-left (1;1)
+        //    // \033[2J clears the entire screen
+        //    // \033[1;1H moves the cursor to row 1, column 1
+        //    std::cout << "\033[2J\033[1;1H";
+        //}
         int stage = wrong.size();
         if (stage >= hangmanStages.size())
             stage = hangmanStages.size() - 1; // prevent overflow if too many wrong guesses
@@ -177,16 +183,18 @@ void display()
         // Win condition
         if (!(find(hidden.begin(), hidden.end(), '_') != hidden.end()))
         {
-            for (const string &line : hangmanStages.back()) 
+            for (const string &line : hangmanStages[wrong.size()]) 
             {
                 cout << line << endl;
             }
-            
+
             for (char letter : hidden)
             {
                 cout << letter << " ";
             }
-            cout << "Congratulations, you guessed " << word << endl;
+            cout << endl;
+            cout << "Congratulations, you guessed " << word << "!" << endl;
+            cout << "Would you like to play again? y/n" << endl;
             done = true;
         }
         // Lose condition
@@ -206,7 +214,20 @@ void display()
 
 int main() 
 {
-    display();
+    char playAgain = 'y';  // start by assuming the player wants to play
+
+    while (tolower(playAgain) == 'y')
+    {
+        display();
+
+        cout << "Play again? (y/n): ";
+        cin >> playAgain;
+
+        // clear the console a bit for readability
+        cout << "\n--------------------------------------\n\n";
+    }
+
+    cout << "Thanks for playing!\n";
 
     return 0;
 };
