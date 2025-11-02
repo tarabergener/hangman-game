@@ -1,10 +1,8 @@
 #include <iostream>
-#include <set>
 #include <vector>
-#include <set>            // for STD::SET
-#include <cassert>        // for ASSERT
-#include <fstream>        // for IFSTREAM
-#include <string>         // for STRING
+#include <cassert>
+#include <fstream>
+#include <string>
 #include <random>
 #include <chrono>
 #include <algorithm>
