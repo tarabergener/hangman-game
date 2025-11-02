@@ -10,22 +10,20 @@ it will be added to a list of wrong letters and a piece of a body will be added 
 the word correctly, they win. If they do not guess within 6 turns, they will see the whole body on the gallows and
 be prompted to try again.
 
-{Describe your purpose for writing this software.}
+I wrote this software to gain greater understanding of the C++ language and practice using it in real time. I wanted to use it to build a game because C++ is commonly used in game creation and I wanted to explore my desire to create games. 
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Hangman Demonstration](https://www.youtube.com/watch?v=qUQle1kzhcw)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+To develop this software, I used the C++ language in Visual Studio Code as well as GitHub to publish my work. 
 
-{Describe the programming language that you used and any libraries.}
+C++ has several libraries that I used to create this program, including iostream and ifstream to handle my input and output features, vector to allow the use of vectors, and random and algorithm to use in my calculations of the program to create the game logic.
 
 # Useful Websites
 
 - [W3 Schools](https://www.w3schools.com/cpp/default.asp)
-- [Web Site Name](http://url.link.goes.here)
+- [Programiz](https://www.programiz.com/cpp-programming/do-while-loop)
 
 # Future Work
 
